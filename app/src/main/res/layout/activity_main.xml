@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.week6daily3homework.view.Rectangle
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fillColor="@color/colorAccent" />
+
+    <com.example.week6daily3homework.view.CompoundView
+        android:id="@+id/compound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick">
+    </com.example.week6daily3homework.view.CompoundView>
+
+    <Button
+        android:id="@+id/btnAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animate Rectangle"
+        android:onClick="onRectClick"/>
+
+    <com.example.week6daily3homework.view.CustomEditText
+        android:id="@+id/etCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Text"
+        android:textSize="30sp"/>
+</LinearLayout>
